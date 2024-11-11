@@ -48,7 +48,7 @@ def extract_data(page_content, keywords):
             'url': soup.find('link', rel='canonical')['href'] if soup.find('link', rel='canonical') else None,
             'title': soup.title.string if soup.title else 'No Title',
             'keywords_matched': matched_keywords,
-            'content': text_content[:500],  # Limit content to first 500 characters for brevity
+            'content': text_content,
             'downloadable_files': downloadable_files  # Include the list of relevant downloadable files
         }
         return data

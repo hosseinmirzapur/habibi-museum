@@ -105,12 +105,14 @@ The structure of each JSON file will look like this:
 7. **`read_texts_from_file`**:
    - Reads a list of texts (URLs or keywords) from a file.
 
-## V1 vs V2
+## Versioning
 
 * v1:
   - Only texts are scraped once the code is executed
 * v2:
    - Scraping downloadable files and including them in the final results
+* v3:
+  - Scraping and downloading the files included in the json file
 
 
 ## Contributing
