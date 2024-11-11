@@ -35,7 +35,8 @@ def extract_data(page_content, keywords, base_url):
                     data['files'].append(file_url)
         for link in soup.find_all('img'):
             file_url = urljoin(base_url, link['src'])
-            data['files'].append(file_url)
+            if file_url.endswith(('.pdf', '.jpg', '.jpeg', '.png', '.docx', '.zip')):
+                data['files'].append(file_url)
         return data
     return None
 
