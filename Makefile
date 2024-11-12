@@ -1,5 +1,5 @@
 activate:
-	@source bookstore_env/bin/activate
+	@source venv/bin/activate
 
 clean:
 	@rm -rf ./scraped_data/*
